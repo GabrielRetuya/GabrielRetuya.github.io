@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Video Gallery</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="finals.js"></script>
+  <style>
+    body {
+      font-family: "Overpass", sans-serif;
+      box-sizing: border-box;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background: url('Fimg/Galhead.jpg') no-repeat;
+      position: fixed;
+      top: 130px;
+      left: 0;
+      right: 0;
+      z-index: 100;
+    }
+
+    .section-header h1 {
+      font: 400 32px "Montserrat", sans-serif;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    .video-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+      grid-gap: 15px;
+      max-width: 1100px;
+      padding: 15px;
+      margin: 0 auto;
+      margin-top: 300px;
+      box-sizing: border-box;
+    }
+
+    .video-gallery .gallery-item {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      background: #000;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .video-gallery .gallery-item img {
+      position: relative;
+      display: block;
+      width: 115%;
+      height: 300px;
+      object-fit: cover;
+      opacity: .5;
+      /*transition: opacity .35s, transform .35s;*/
+      transition: all 350ms ease-in-out;
+      transform: translate3d(-23px, 0, 0);
+      /*backface-visibility: hidden;*/
+    }
+
+    .north-cascades-img {
+      object-position: 50% 30%;
+    }
+
+    .video-gallery .gallery-item .gallery-item-caption {
+      padding: 32px;
+      font-size: 1em;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .video-gallery .gallery-item .gallery-item-caption,
+    .video-gallery .gallery-item .gallery-item-caption>a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .video-gallery .gallery-item h2 {
+      font-weight: 300;
+      overflow: hidden;
+      padding: 12px 0;
+    }
+
+    .video-gallery .gallery-item h2,
+    .video-gallery .gallery-item p {
+      position: relative;
+      margin: 0;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .video-gallery .gallery-item p {
+      letter-spacing: 1px;
+      font-size: 12px;
+      padding: 12px 0;
+      opacity: 0;
+      transition: opacity 0.35s, transform 0.35s;
+      transform: translate3d(10%, 0, 0);
+    }
+
+    .video-gallery .gallery-item:hover img {
+      opacity: 0.3;
+      transform: translate3d(0, 0, 0);
+    }
+
+    .video-gallery .gallery-item .gallery-item-caption {
+      text-align: left;
+    }
+
+    .video-gallery .gallery-item h2::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 15%;
+      height: 1px;
+      background: #fff;
+      transition: transform 0.3s;
+      transform: translate3d(-100%, 0, 0);
+    }
+
+    .video-gallery .gallery-item:hover h2::after {
+      transform: translate3d(0, 0, 0);
+    }
+
+    .video-gallery .gallery-item:hover p {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+
+    /*
+@media screen and (max-width: 784px) {
+  .video-gallery {
+    width: 100%;
+    padding: 15px;    
+
+  }
+  .video-gallery .gallery-item {
+    width: 95%;
+    margin: 0 auto; 
+    width: 100%;
+  }
+}
+*/
+  </style>
+
+</head>
+
+<body onload="initClock()">
+
+  <!-- Navigation Bar -->
+  <div class="grad-bar"></div>
+  <header>
+    <a href="index.html" style="display:flex;">
+      <img src="Fimg/coatOfArms.png">
+      <img src="Fimg/philLogo.png">
+    </a>
+
+    <div class="datetime">
+      <div class="date">
+        <span id="dayname">Day</span>,
+        <span id="month">Month</span>
+        <span id="daynum">00</span>,
+        <span id="year">Year</span>
+      </div>
+      <div class="time">
+        <span id="hour">00</span>:
+        <span id="minutes">00</span>:
+        <span id="seconds">00</span>
+        <span id="period">AM</span>
+      </div>
+    </div>
+    <div class="navbar-header">
+      <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse"><span
+          class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+    </div>
+  </header>
+  <div class="topnav">
+    <a href="index.html" class="home-btn">Home</a>
+    <button class="dropdown-btn"> About Philippines
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="aboutph.html"> History </a>
+      <a href="aboutph.html#GeoNEnv"> Geography and Environment </a>
+      <a href="aboutph.html#Demographics"> Demographics </a>
+      <a href="aboutph.html#Culture"> Culture </a>
+    </div>
+    <button class="dropdown-btn"> Tourist Attractions
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="touristattraction.html"> Luzon </a>
+      <a href="touristattraction.html#Visayas"> Visayas </a>
+      <a href="touristattraction.html#Mindanao"> Mindanao </a>
+    </div>
+    <a href="VideoGallery.html"></i> Video Gallery </a>
+    <a href="LogIn.html"><i class="fa fa-fw fa-user"></i> Log-In </a>
+    <a href="ContactUs.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+  </div>
+
+  <!-- video gallery contents -->
+
+  <div class="content">
+
+    <div class="section-header">
+      <h1>Video Gallery</h1>
+    </div>
+
+    <div class="video-gallery">
+
+      <div class="gallery-item ">
+        <img src="Fimg/facts.jpg" alt="Facts About The Philippines" />
+        <div class="gallery-item-caption">
+          <!--<div>-->
+          <h2>10 Surprising Facts About The Philippines</h2>
+          <p>We’ll be exploring 10 surprising facts about the beautiful and welcoming country of The Philippines.</p>
+          <!--</div>-->
+          <a class="youtube-popup" href="https://www.youtube.com/watch?v=nQvoTSHV13A&ab_channel=FTDFacts"></a>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="Fimg/history.jpg" alt="The Philippines: History, Geography, Economy & Culture" />
+        <div class="gallery-item-caption">
+          <!--<div>-->
+          <h2>The Philippines: History, Geography, Economy & Culture</h2>
+          <p>The Philippine Islands are the large islands of Luzon and Mindanao, and the collection of smaller islands
+            between, known as the Visayas, with Palawan far to the west.</p>
+          <!--</div>-->
+          <a class="youtube-popup" href="https://www.youtube.com/watch?v=9Mzw4Ln-nNk&ab_channel=Geodiode"></a>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="Fimg/palawan.jpg" alt="15 THINGS BEFORE VISITNG THE PHILIPPINES" />
+        <div class="gallery-item-caption">
+          <!--<div>-->
+          <h2>15 THINGS BEFORE VISITNG THE PHILIPPINES</h2>
+          <p>15 things I wish I knew before visiting the Philippines, this is a guide to Budget, itinerary, route,
+            safety everything you need to know before visiting the beautiful country of the Philippines!</p>
+          <!--</div>-->
+          <a class="youtube-popup" href="https://www.youtube.com/watch?v=lfq08YKgIDE&ab_channel=JoelFriend"></a>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="Fimg/water.jpg" alt="101 Facts About The Philippines" />
+        <div class="gallery-item-caption">
+          <!--<div>-->
+          <h2>101 Facts About The Philippines</h2>
+          <p>101 Facts all about The Philippines!</p>
+          <!--</div>-->
+          <a class="youtube-popup" href="https://www.youtube.com/watch?v=qbH4v0vmsXs&ab_channel=101Facts"></a>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="Fimg/ph.jpg" alt="Geography Now! PHILIPPINES" />
+        <div class="gallery-item-caption">
+          <!--<div>-->
+          <h2>Geography Now!</h2>
+          <p>You Filipino Geograpeeps said you could dethrone Germany by making THIS episode the most watched. Let's see
+            if you can make that happen. </p>
+          <!--</div>-->
+          <a class="youtube-popup" href="https://www.youtube.com/watch?v=LVFvRNRTEd4&ab_channel=GeographyNow"></a>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="Fimg/culture.jpg" alt="5 Wacky Things About Filipino Culture" />
+        <div class="gallery-item-caption">
+          <!--<div>-->
+          <h2>5 Wacky Things About Filipino Culture</h2>
+          <p>Here are 5 of them that stand out to me the most about Filipino Culture! </p>
+          <!--</div>-->
+          <a class="youtube-popup" href="https://www.youtube.com/watch?v=13GUD30jz08&ab_channel=DrewBinsky"></a>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="Fimg/army.jpg" alt="History and Culture of The Philippines" />
+        <div class="gallery-item-caption">
+          <!--<div>-->
+          <h2>History and Culture of The Philippines</h2>
+          <p>Narrated by: Jef Roxas</p>
+          <!--</div>-->
+          <a class="youtube-popup" href="https://www.youtube.com/watch?v=BeCL4XlrxWo&ab_channel=RicselJazman"></a>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="Fimg/evolution.jpg" alt="Philippine History" />
+        <div class="gallery-item-caption">
+          <!--<div>-->
+          <h2>Evolution of the Philippine</h2>
+          <p>This video was about timeline of Philippine History</p>
+          <!--</div>-->
+          <a class="youtube-popup" href="https://www.youtube.com/watch?v=ZNmTSuGKPok&ab_channel=RedMappingID"></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--Footer -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-xs-6 col-md-3">
+          <h6>About Philippines</h6>
+
+          <a href="VideoGallery.html">
+            <h6>Video Gallery</h6>
+          </a>
+          <a href="LogIn.html">
+            <h6>Log-In</h6>
+          </a>
+          <a href="ContactUs.html">
+            <h6>Contact US</h6>
+          </a>
+          <img src="Fimg/loveph.jpg" alt="Love The Philippines" class="footer-image">
+          <img src="Fimg/letranseal.png" alt="Love The Philippines" class="footer-image">
+          <ul class="footer-links">
+            <li><a href="aboutph.html">History</a></li>
+            <li><a href="aboutph.html#GeoNEnv">Geography and Environment</a></li>
+            <li><a href="aboutph.html#Demographics">Demographics</a></li>
+            <li><a href="aboutph.html#Culture">Culture</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Tourist Attractions</h6>
+          <ul class="footer-links">
+            <li><a href="touristattraction.html">Luzon</a></li>
+            <li><a href="touristattraction.html#Visayas">Visayas</a></li>
+            <li><a href="touristattraction.html#Mindanao">Mindanao</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <hr>
+
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html lang='en' dir="ltr">
+
+<head>
+  <title>It's More Fun in the Philippines</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
+  <script src="finals.js"></script>
+  <style>
+    body,
+    h1,
+    h2 {
+      font-family: Ubuntu, sans-serif;
+    }
+
+    h1 {
+      font-size: 40px;
+      background: linear-gradient(90deg, rgba(251, 39, 0, 1) 36%, rgba(36, 14, 201, 1) 62%);
+      /* Adjust the colors as needed */
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .container-contents {
+      margin-top: 10px;
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body onload="initClock()">
+  <!-- website header displaying the real time clock and logos -->
+  <div class="grad-bar"></div>
+  <header>
+    <a href="index.html" style="display:flex;">
+      <img src="Fimg/coatOfArms.png">
+      <img src="Fimg/philLogo.png">
+    </a>
+
+    <div class="datetime">
+      <div class="date">
+        <span id="dayname">Day</span>,
+        <span id="month">Month</span>
+        <span id="daynum">00</span>,
+        <span id="year">Year</span>
+      </div>
+      <div class="time">
+        <span id="hour">00</span>:
+        <span id="minutes">00</span>:
+        <span id="seconds">00</span>
+        <span id="period">AM</span>
+      </div>
+    </div>
+    <div class="navbar-header">
+      <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse"><span
+          class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+    </div>
+  </header>
+  <div class="topnav">
+    <a href="index.html" class="home-btn">Home</a>
+    <button class="dropdown-btn"> About Philippines
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="aboutph.html">History</a>
+      <a href="aboutph.html#GeoNEnv">Geography and Environment</a>
+      <a href="aboutph.html#Demographics">Demographics</a>
+      <a href="aboutph.html#Culture">Culture</a>
+    </div>
+    <button class="dropdown-btn"> Tourist Attractions
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="touristattraction.html"> Luzon </a>
+      <a href="touristattraction.html#Visayas"> Visayas </a>
+      <a href="touristattraction.html#Mindanao"> Mindanao </a>
+    </div>
+    <a href="VideoGallery.html"></i> Video Gallery </a>
+    <a href="LogIn.html"><i class="fa fa-fw fa-user"></i> Log-In </a>
+    <a href="ContactUs.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+  </div>
+
+  <!--contents-->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <section id="Luzon">
+    <div class="container-contents">
+      <div class="row">
+        <div class="TourAt">
+          <h1>
+            <center>Tourist Attractions in Luzon</center>
+          </h1>
+          <h2>Baguio City</h2>
+          <p>Hailed as the Summer Capital of the Philippines, Baguio is the top destination to go to if you want to take
+            a break from the tropical heat in the lowlands. With average temperatures ranging from 15-23°C, the city
+            rarely experiences temperatures higher than 26°C even during the warmest parts of the year. Because of this
+            climate, Baguio is also home to beautiful plants that wouldn’t usually survive elsewhere in the county. Also
+            nicknamed the City of Pines, you’ll be in for a treat with all the beautiful flowers and lush vegetation as
+            you enter the vicinity. It will truly feel as if you’re entering a different world.</p>
+          <img src="Fimg/baguio.png" alt="Baguio City" class="content-image" id="Baguiopic">
+          <br>
+          <h2>Ifugao</h2>
+          <p>When visiting Ifugao, make sure to get a taste of their famous Tinawon rice. While searching for rice keep
+            an eye out for the bulul. It is a carved wooden figure used to guard their rice crops. If you haven’t had
+            enough of rice yet, visit UNESCO cultural landscapes, the Rice Terraces of the Philippines and scale the
+            2,000 year old Banaue Rice Terraces carved into the mountains by Ifugaos. Cap off your trip by attending
+            festivals, Gotad Ad Ifugao, held every June to showcase their age old cultures and traditions; where one can
+            participate in the traditional wooden scooter race.</p>
+          <img src="Fimg/ifugao.png" alt="Ifugao" class="content-image" id="Ifugao">
+          <br>
+          <h2>La Union</h2>
+          <p>One of the favorite quick weekend destinations of young Metro Manila dwellers. This laid-back coastal town
+            is famous for its surfing spots but what not a lot of people know is that it’s also brimming with other
+            natural and heritage attractions and cultural activities like red clay pottery, grape picking, loom weaving,
+            churches for pilgrimage tours, waterfalls, and eco-tours. Discover what else La Union has to offer and stay
+            for more than a quick weekend.</p>
+          <img src="Fimg/launion.png" alt="La Union" class="content-image" id="La Union">
+          <br>
+          <h2>Ilocos Sur</h2>
+          <p>In Ilocos Sur, you’ll be delighted to step into the picturesque Vigan, a UNESCO World Heritage site. It
+            feels like time traveling to the past, as the Spanish-era houses have been well-preserved over the years.
+            While walking in the streets, don’t forget to grab delicacies that are unique to the town such as Vigan
+            longganisa and Ilocos empanada.</p>
+          <img src="Fimg/ilocussur.png" alt="Ilocos Sur" class="content-image" id="Ilocos Sur">
+          <br>
+          <h2>Manila</h2>
+          <p>Manila is an excellent hub for Philippine culture, history, shopping, and nightlife. You’ll be greeted with
+            lively streets teeming with cars, buildings, and people with high energy, but you’ll also never run out of
+            fun activities to do.</p>
+          <img src="Fimg/manila.png" alt="Manila City" class="content-image" id="Manila">
+          <br>
+        </div>
+      </div>
+    </div>
+    <br>
+  </section>
+  <br>
+  <hr>
+  <br>
+
+  <section id="Visayas">
+    <div class="container-contents">
+      <div class="row">
+        <div class="TourAt">
+          <h1>
+            <center>Tourist Attractions in Visayas</center>
+          </h1>
+          <h2>Puerto Princesa</h2>
+          <p>Visit the capital of Palawan, home of the UNESCO World Heritage site and famed Underground River. Travelers
+            will have to pass through here when heading for other popular Palawan destinations such as El Nido and
+            Coron. However, there’s more than meets the eye in The City in a Forest. You’ll be surprised to find out
+            that Puerto Princesa has natural and cultural wonders to offer for different kinds of travelers as well.
+          </p>
+          <img src="Fimg/puertoprincesa.png" alt="Puerto Princesa" class="content-image" id="Puerto Princesapic">
+          <br>
+          <h2>Coron</h2>
+          <p>Coron is one of Palawan’s most popular beach and island destinations. This paradise-like getaway comprises
+            of the eastern half of Busuanga Island, Coron Island, and 50 other islets within the vicinity, all of which
+            are separate from the main Palawan island. It has caught the attention of many due to its World War II wreck
+            diving spots, beautiful rock formations, and unbelievably clear waters. It is also considered the more quiet
+            and laidback sibling of El Nido, another famous Palawan destination because of its gorgeous waters and
+            scenery. Coron certainly has a unique charm to it and worth adding to your travel bucket list when in the
+            Philippines.</p>
+          <img src="Fimg/coron.png" alt="Coron" class="content-image" id="Coron">
+          <br>
+          <h2>Boracay</h2>
+          <p>Being the Philippines’ top tourist draw and most famous beach took its toll on the island of Boracay. After
+            taking a break for 6 months, Boracay reopens greener than ever—and everything is pristine like never before.
+            Learn more about the new Boracay and be prepared to fall in love all over again. With glorious White Beach
+            and the country's best island nightlife on its resume, it's easy to understand why Boracay is the
+            Philippines' top tourist draw. Alas, the tiny island proved too popular for its own good: In 2018 Boracay
+            was placed in "rehab," closed for 6 months to ease the strain on its fragile environment and fix the
+            infrastructure and carrying capacity.</p>
+          <img src="Fimg/boracay.png" alt="Boracay" class="content-image" id="Boracay">
+          <br>
+          <h2>Bohol</h2>
+          <p>The home of the famous Chocolate Hills, Bohol is one of the most visited destinations in the Central
+            Visayas region of the Philippines. The island province offers breathtaking spots for history buffs, beach
+            lovers, and adrenaline junkies. Bohol is comprised of one major island and 73 smaller ones surrounding it,
+            so you'll have plenty of places to explore during your trip here. One thing’s for sure: You’ll enjoy every
+            second of your stay and love the diversity that Bohol offers.</p>
+          <img src="Fimg/bohol.png" alt="Bohol" class="content-image" id="Ilocos Sur">
+          <br>
+          <h2>Catanduanes</h2>
+          <p>An island province in the Philippines, boasts natural beauty and attractions that appeal to nature lovers
+            and adventure seekers.</p>
+          <img src="Fimg/catanduanes.png" alt="Catanduanes" class="content-image" id="Manila">
+          <br>
+        </div>
+      </div>
+    </div>
+    <br>
+  </section>
+  <br>
+  <hr>
+  <br>
+  <section id="Mindanao">
+    <div class="container-contents">
+      <div class="row">
+        <div class="TourAt">
+          <h1>
+            <center>Tourist Attractions in Mindanao</center>
+          </h1>
+          <h2>Davao City</h2>
+          <p>Davao City is the regional center of Davao Region. It is the most populous city in Mindanao and the third
+            largest city in the Philippines. Known for its bustling economic activities, urban build-up and modern
+            amenities, Davao City is one of the most important economies in the island, and the third most important
+            urban center in the Philippines.</p>
+          <img src="Fimg/davao.png" alt="Davao City" class="content-image" id="Puerto Princesapic">
+          <br>
+          <h2>Iligan City</h2>
+          <p>Iligan City has 23 confirmed waterfalls with 39 others reported by local barangay heads. The most famous
+            among these is the Maria Cristina Falls which was harnessed by the National Power Corporation in the 1950s.
+            The falls generate electricity to power not just the City of Iligan but almost all of the Island of
+            Mindanao.</p>
+          <img src="Fimg/iligan.png" alt="Iligan City" class="content-image" id="Coron">
+          <br>
+          <h2>Cagayan de Oro City</h2>
+          <p>Cagayan de Oro City stands as the business, trade, information technology, and adventure tourism center of
+            Mindanao. In fact, it has become the leading convention center for Visayas and Mindanao. Those planning to
+            hold conventions or similar events can select from a wide range of facilities including large convention
+            halls and affordable training centers. As the "City of Golden Opportunities", it is considered as the
+            regional growth capital of Northern Mindanao and the focus of investment in the region. It is also the
+            transshipment point for agricultural and industrial produce of nearby provinces.</p>
+          <img src="Fimg/cagayan.png" alt="Cagayan de Oro City" class="content-image" id="Boracay">
+          <br>
+          <h2>Sultan Kudarat</h2>
+          <p>Sultan Kudarat was once a part of the former empire province of Cotabato and is located in the southwestern
+            part of the island of Mindanao. Hundreds of first class caves are actually found in this province. The
+            province is also the top producer of coffee in the Philippines.</p>
+          <img src="Fimg/sultan.png" alt="Sultan Kudarat" class="content-image" id="Ilocos Sur">
+          <br>
+          <h2>Sarangani Province</h2>
+          <p>Located in the southern tip of the Philippines, a tropical paradise, is the Province of Sarangani. Nature
+            trippers find refuge in the clean peaceful white sand beach. Dive and snorkeling fanatics can’t get enough
+            of the marvelous diving grounds where exotic and untouched coral gardens spread out. One will be captivated
+            with the colorful marine life and it will be no surprise when one gets hooked in Sarangani’s haven of
+            amazing marine treasures.</p>
+          <img src="Fimg/sarangani.png" alt="Sarangani Province" class="content-image" id="Manila">
+          <br>
+        </div>
+      </div>
+      <h5><center>References</center></h5>
+      <p>(n.d.). Home - Love the Philippines! Welcome to the DOT's Corporate Site. Retrieved November 27, 2023, from http://www.tourism.gov.ph/</p>
+      <p>(n.d.). Explore more things to love! | Department of Tourism Philippines. Retrieved November 27, 2023, from https://philippines.travel/</p>
+      <p>\/. (2023, June 16). YouTube. Retrieved November 27, 2023, from http://www.bridgestravel.com/philippines/philippines.htm</p>
+      <p>Culture of the Philippines. (n.d.). CSUB. Retrieved November 27, 2023, from https://www.csub.edu/pacificrim/countryprospectus/culture.htm</p>
+      <p>Demographics of the Philippines - statistics & facts. (2023, June 2). Statista. Retrieved November 27, 2023, from https://www.statista.com/topics/5799/demographics-in-the-philippines/#topicOverview</p>
+      <p>Furlong, M. J. (n.d.). Demographics of the Philippines. Wikipedia. Retrieved November 27, 2023, from https://en.wikipedia.org/wiki/Demographics_of_the_Philippines</p>
+      <p>History of the Philippines | People, Spain, United States, Revolution, Map, & Facts. (2023, October 16). Britannica. Retrieved November 27, 2023, from https://www.britannica.com/topic/history-of-Philippines</p>
+      <p>Philippines History • FamilySearch. (2022, December 5). FamilySearch. Retrieved November 27, 2023, from https://www.familysearch.org/en/wiki/Philippines_History</p>
+      <p>Philippines | History, Map, Flag, Population, Capital, & Facts. (n.d.). Britannica. Retrieved November 27, 2023, from https://www.britannica.com/place/Philippines#ref23724</p>
+    </div>
+    <br>
+    
+  </section>
+  <!--Footer -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-xs-6 col-md-3">
+          <h6>About Philippines</h6>
+
+          <a href="VideoGallery.html">
+            <h6>Video Gallery</h6>
+          </a>
+          <a href="LogIn.html">
+            <h6>Log-In</h6>
+          </a>
+          <a href="ContactUs.html">
+            <h6>Contact US</h6>
+          </a>
+          <img src="Fimg/loveph.jpg" alt="Love The Philippines" class="footer-image">
+          <img src="Fimg/letranseal.png" alt="Letran" class="footer-image">
+          <ul class="footer-links">
+            <li><a href="aboutph.html">History</a></li>
+            <li><a href="aboutph.html#GeoNEnv">Geography and Environment</a></li>
+            <li><a href="aboutph.html#Demographics">Demographics</a></li>
+            <li><a href="aboutph.html#Culture">Culture</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Tourist Attractions</h6>
+          <ul class="footer-links">
+            <li><a href="touristattraction.html">Luzon</a></li>
+            <li><a href="touristattraction.html#Visayas">Visayas</a></li>
+            <li><a href="touristattraction.html#Mindanao">Mindanao</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <hr>
+
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

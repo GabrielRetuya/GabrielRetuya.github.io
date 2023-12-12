@@ -1,0 +1,134 @@
+  body{
+    margin:0px;
+    margin-top:0px;
+  }
+
+  *{
+    box-sizing: border-box;}
+
+  .grad-bar {
+  display: flex;
+  width: 100vw;
+  height: 5px;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  animation: gradbar 10s ease infinite;
+  position: fixed;
+  top: 0;
+  z-index: 100; 
+}
+
+/* KEYFRAME ANIMATIONS */
+
+@keyframes gradbar {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+
+  header{
+    position:fixed;
+    display:flex;
+    top:5px;
+    left:0px;
+    right:0px;
+    height:80px;
+    background-color:black;
+    padding:15px;
+    width:100%;
+    z-index: 100;}
+  
+  header img{
+    padding-left:20px;}
+  
+  /* format for my clock feature */
+  .datetime{
+    color:white;
+    padding:7px;
+    margin-left:auto;}  
+  .date{
+    font-family:"Arial", sans-serif;
+    font-weight:bold;
+    text-align:center;}   
+  .time{
+    font-family:"Courier New", monospace;
+    font-weight:bold;
+    text-align:center;}
+
+  /*top navigation */   
+.topnav {
+    margin-top: 85px;
+    margin-bottom: 100px;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2504aa;
+    overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    z-index: 100;
+}
+.topnav a, .dropdown-btn {
+    padding: 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: inline-block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.home-btn{
+    padding: 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: inline-block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+.home-btn:hover{
+  color: black;
+  background-color:#f4af1b;
+}
+
+/* hover features in menu */
+.sidenav a:hover, .dropdown-btn:hover {
+    color: black;
+    background-color:#f4af1b;}
+.dropdown-container {
+    display: none;
+    background-color: black;
+    padding-left: 8px;
+}
+.dropdown-container a {
+    display: inline-block; 
+    text-decoration: none;
+    color: white;
+}
+.fa-caret-down {
+    padding-right: 8px;
+}
+.topnav .dropdown-container {
+    top: 50px;
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang='en' dir="ltr">
+
+<head>
+    <title>It's More Fun in the Philippines</title>    
+    <link rel ="stylesheet" href="home.css">
+    <link rel ="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
+    <script src="finals.js"></script>
+<style>
+
+  body {
+  margin: 0px;
+  margin-top: 0px;
+  background-image: url('Fimg/mainbg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-attachment: fixed;
+  font-family: Ubuntu, sans-serif;
+}
+
+  *{
+    box-sizing: border-box;}
+
+  .container-contents{ 
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+  }
+
+  .row{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: flex;
+  }
+
+  .content-image{
+    width: 45%;
+    height: 440px;
+
+  }
+  .row h1{
+    font-size: 40px;
+   background: linear-gradient(90deg, rgba(251,39,0,1) 5%, rgba(187,201,14,1) 13%);
+      /* Adjust the colors as needed */
+    -webkit-background-clip: text;
+    color: transparent;
+
+   font-family: Ubuntu, sans-serif;
+  }
+
+  .row h2{
+    background: linear-gradient(90deg, rgba(251,39,0,1) 5%, rgba(187,201,14,1) 13%);
+      /* Adjust the colors as needed */
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .row p{
+    font-size: 20px;
+    color: white;
+  }
+
+  .row ul{
+     color: white;
+  }
+
+  #armypic{
+    float: right;
+    margin-top: -450px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+  }
+  #phpic{
+    margin-left: 440px;
+  }
+  #climatepic{
+    float: right;
+    margin-top: -275px;
+    height: 350px;
+    width: 350px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+  }
+
+  hr{
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+
+  }
+</style> 
+</head>
+
+<body onload="initClock()">
+  <!-- website header displaying the real time clock and logos -->
+<div class="grad-bar"></div>
+<header>
+    <a href="index.html" style="display:flex;">
+    <img src="Fimg/coatOfArms.png">
+    <img src="Fimg/philLogo.png">
+    </a>
+    
+    <div class="datetime">
+      <div class="date">
+        <span id="dayname">Day</span>,
+        <span id="month">Month</span>
+        <span id="daynum">00</span>,
+        <span id="year">Year</span>
+      </div>
+      <div class="time">
+        <span id="hour">00</span>:
+        <span id="minutes">00</span>:
+        <span id="seconds">00</span>
+        <span id="period">AM</span>
+      </div>
+    </div>
+<div class="navbar-header">
+      <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+   </div>
+  </header>
+<div class="topnav">
+      <a href="index.html" class="home-btn">Home</a>
+      <button class="dropdown-btn"> About Philippines 
+      <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="aboutph.html">History</a>
+        <a href="aboutph.html#GeoNEnv">Geography and Environment</a>
+        <a href="aboutph.html#Demographics">Demographics</a>
+        <a href="aboutph.html#Culture">Culture</a>
+      </div>
+      <button class="dropdown-btn"> Tourist Attractions 
+      <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+          <a href="touristattraction.html"> Luzon </a>
+        <a href="touristattraction.html#Visayas"> Visayas </a>
+        <a href="touristattraction.html#Mindanao"> Mindanao </a>
+      </div>
+      <a href="VideoGallery.html"></i> Video Gallery </a>
+      <a href="LogIn.html"><i class="fa fa-fw fa-user"></i> Log-In </a>
+      <a href="ContactUs.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+    </div>
+
+<!--contents-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<section id="History"> 
+<div class="container-contents">
+<div class="row">
+<div class="aboutph" >
+  <h1>Philippine History</h1>
+  <p>During his quest for a westward path to the Spice Islands in 1521, Ferdinand Magellan, a Portuguese navigator, discovered the Philippines. Local communities were contacted by the Spanish expedition under the command of Magellan, who was slain in the Battle of Mactan. The Spanish nevertheless made a comeback, and Miguel Lopez de Legazpi founded Cebu's first Spanish town in 1565, ushering in more than three centuries of Spanish occupation.
+  </p>
+  <ul class="timeline">
+    <h2>Timeline</h2>
+    <li><a>1521 - The Philippines are discovered by Europe </a><ol>- Colonized by Spain for over 300 years, influencing culture and governance.</ol></li>
+    <li><a>1571 - Regular trade was established between the Spaniards and the Chinese</a></li>
+    <li><a>1756 - The early Spanish colonization period</a></li>
+    <li><a>1762 - The later period of Spanish rule </a></li>
+    <li><a>1763 - Seven Years’ War</a></li>
+    <li><a>1820 - Social and economic changes as the Port 72 of Manila opened to foreign commerce</a></li>
+    <li><a>1868 - Spanish Revolution when Queen Isabella II deposed</a></li>
+    <li><a>1898 - Spanish-American War</a>
+      <ol>- Resistance against Spanish rule led by leaders like Andrés Bonifacio.</ol>
+      <ol>- U.S. took control after the Spanish-American War.</ol>
+    </li>
+    <li><a>1898 - Declaration of Philippine independence from Spaniards</a>
+      <ol>- Emilio Aguinaldo declared independence in 1898.</ol>
+    </li>
+    <li><a>1899 - 1935 First phase of American rule</a></li>
+    <li><a>1934 - First constitution.</a></li>
+    <li><a>1941 - The Japanese occupied the Philippines</a>
+      <ol>- Philippines played a role in World War II, endured Japanese occupation.</ol>
+    </li>
+    <li><a>1946 - The Philippines became a republic</a>
+      <ol>- Granted independence from the U.S. on July 4, 1946.</ol>
+    </li>
+    <li><a>1986 - People Power Revolution</a>
+      <ol>- A peaceful uprising ousted dictator Ferdinand Marcos.</ol>
+      <ol>- Restored democracy and paved the way for Philippine freedom.</ol>
+    </li>
+  </ul>
+  <img src="Fimg/army.jpg" alt="Philippine Army" class="content-image" id="armypic">
+</div>
+</div>
+</div>
+<br>
+<hr>
+</section>
+
+<section id="GeoNEnv">
+<div class="container-contents"> 
+<div class="row">
+<div class="aboutph">
+  <h1>Geography and Environment of the Philippines</h1>
+  <p>The Philippines is an island nation in Southeast Asia. The South China Sea borders it on the west and north, the Sulu Sea on the southwest, the Celebes Sea on the south, and the Philippine Sea on the east. The archipelago is roughly 1,150 miles (1,850 km) long from north to south and about 700 miles (1,130 km) wide from east to west at its southern base. The islands, once thought to be 7,107, were later discovered to be more, totaling over 7,600. Around 350 islands are at least one square mile (2.6 square kilometers) in size, and only about two-fifths of them are named. The major islands are grouped into Luzon (north and west), Visayas (middle), and Mindanao (south).</p>
+  <img src="Fimg/ph.jpg" alt="Philippine Geography" class="content-image" id="phpic">
+  <h1>Climate</h1>
+  <p>There are three distinct seasons in the Philippines' tropical marine climate: Tag-init (hot and dry), Tag-ulan (rainy), and<br>Tag-lamig (cool and dry). Typhoons frequently occur in the wet season.</p>
+  <h1>Natural Hazards</h1>
+  <p>Earthquakes and volcanic eruptions are common in the Philippines because of its placement in<br> the Pacific Ring of Fire. Tropical cyclones, or typhoons, frequently occur, particularly between June and November.</p>
+  <img src="Fimg/climate.jpg" alt="Philippine Climate" class="content-image" id="climatepic">
+</div>
+</div>
+</div>
+<br>
+<hr>
+</section>
+
+<section id="Demographics">
+<div class="container-contents"> 
+<div class="row">
+<div class="aboutph" id="Demographics">
+  <h1>Demographics of the Philippines</h1>
+  <p>The Philippines is one of the most populous countries in Southeast Asia, with a population exceeding 110 million people. The Philippines has a youthful population, with 64% aged between 15 and 64, and over 30% below 14. In 2019, the average age for male household members was 37.68, and for females, it was 44.2. The youth are seen as crucial for economic recovery post-COVID-19 lockdowns.</p>
+  <h1>Ethnic Groups</h1>
+  <p>The Philippines is home to a wide variety of ethnic groups. Among the principal groupings are the Tagalog, Cebuano, Ilocano, and Bisaya peoples.</p>
+  <h1>Languages</h1>
+  <p>The official languages of the multilingual nation are English and Filipino, which is based on Tagalog. Throughout the archipelago, many regional languages and dialects are spoken.</p>
+  <h1>Religion</h1>
+  <p>The Philippines is predominantly Roman Catholic, a legacy of over three centuries of Spanish colonization. There are also significant Muslim and Protestant minorities.</p>
+  <h1>Economy</h1>
+  <p>With industries including manufacturing, services, agriculture, and the expanding business process outsourcing (BPO) sector, the Philippines boasts a diversified economy.</p>
+  </div>
+  </div>
+  </div>
+  <br>
+  <hr>
+</section>
+
+<section id="Culture">
+<div class="container-contents"> 
+<div class="row">
+<div class="aboutph">
+  <h1>Culture</h1>
+  <p>The Philippines is a country where East and West cultures meet. The Filipino people are clearly of Asian descent, although they also have significant Western traditions. American colonizers, Spanish conquistadors, and Chinese traders all had an impact on the development of modern Filipino culture. Particularly when it comes to guests from the West, Filipinos are known for their warmth. Filipinos are passionate and enthusiastic about life in a way that seems more Latin than Asian due to their close ties to Spanish culture.</p>
+  <img src="Fimg/culture.jpg" alt="Philippine Culture" class="content-image" id="culturepic">
+  <img src="Fimg/food.jpg" alt="Philippine Cuisine" class="content-image" id="foodpic">
+  <h1>Festivals</h1>
+  <p>Lively multicolored events that take place across the archipelago. These celebrations, which feature traditional dances, music, and costumes, frequently incorporate religious, cultural, and historical components. </p>
+  <h1>Cuisine</h1>
+  <p>Filipino food is a combination of American, Spanish, Chinese, and indigenous flavors. A variety of street meals and dishes like lechon, sinigang, and adobo is popular.</p>
+  </div>
+  </div>
+  
+  </div>
+  
+</section>
+
+<!--Footer -->
+ <footer class="site-footer">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-xs-6 col-md-3">
+            <h6>About Philippines</h6>
+
+       <a href="VideoGallery.html">
+        <h6>Video Gallery</h6>
+        </a>
+        <a href="LogIn.html">
+        <h6>Log-In</h6>
+        </a>
+        <a href="ContactUs.html">
+        <h6>Contact US</h6>
+        </a>
+        <img src="Fimg/loveph.jpg" alt="Love The Philippines" class="footer-image">
+        <img src="Fimg/letranseal.png" alt="Letran" class="footer-image">
+            <ul class="footer-links">
+              <li><a href="aboutph.html">History</a></li>
+              <li><a href="aboutph.html#GeoNEnv">Geography and Environment</a></li>
+              <li><a href="aboutph.html#Demographics">Demographics</a></li>
+              <li><a href="aboutph.html#Culture">Culture</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Tourist Attractions</h6>
+            <ul class="footer-links">
+                <li><a href="touristattraction.html">Luzon</a></li>
+              <li><a href="touristattraction.html#Visayas">Visayas</a></li>
+              <li><a href="touristattraction.html#Mindanao">Mindanao</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <hr>
+
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+</footer>
+</body>
+
+</html>
